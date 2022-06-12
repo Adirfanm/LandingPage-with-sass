@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 5000px;
+}
+
+body::before {
+  content: "";
+  background-image: url(../assets/Background.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 55vmax;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.5;
+  }
+}
+
+.custom-nav .navbar-brand img {
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+}
+
+.custom-nav .navbar-brand span {
+  color: #f35ca3;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 0.4em;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #f35ca3;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 2.4em;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #f02c88;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: inline-block;
+  color: white;
+  background-color: #f35ca3;
+  border-radius: 2em;
+  padding: 0.4em 1.8em;
+  text-decoration: none;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button:hover {
+  color: #f35ca3;
+  border: 1px solid #f35ca3;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav {
+    margin-top: -1em;
+  }
+}
+
+.custom-section {
+  margin-top: 10em;
+}
+
+.custom-section h2 {
+  font-weight: 700;
+  font-size: 3.8rem;
+  color: #f35ca3;
+  line-height: 1;
+}
+
+.custom-section h3 {
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #b5c7ea;
+  line-height: 1;
+}
+
+.custom-section p {
+  margin-top: 2em;
+  color: #393c43;
+  font-size: 1.075rem;
+}
+
+.custom-section a {
+  margin-top: 2em;
+  border: 1px solid transparent;
+  display: inline-block;
+  color: white;
+  background-color: #f35ca3;
+  border-radius: 2em;
+  padding: 0.4em 1.8em;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.custom-section a:hover {
+  color: #f35ca3;
+  border: 1px solid #f35ca3;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 5em;
+    text-align: center;
+  }
+  .custom-section h2,
+  .custom-section h3,
+  .custom-section p {
+    text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+  }
+  .custom-section h3 {
+    color: #686d7a;
+  }
+}
+
+.contact-section {
+  margin-top: 10em;
+}
+
+.contact-section h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #b5c7ea;
+  line-height: 1;
+}
+
+.contact-section h2 span {
+  color: #f35ca3;
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-section {
+    margin-top: 16em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

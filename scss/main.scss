@@ -1,0 +1,126 @@
+@import "fonts";
+@import "variabels";
+@import "mixins";
+
+// Styles
+
+body {
+  font-family: "Montserrat", sans-serif;
+  &::before {
+    content: "";
+    background-image: url(../assets/Background.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 55vmax;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (max-width: 992px) {
+      opacity: 0.5;
+    }
+  }
+  height: 5000px;
+}
+
+// Navbar
+.custom-nav {
+  .navbar-brand {
+    img {
+      width: 30px;
+      height: 30px;
+      margin-top: -5px;
+    }
+    span {
+      color: $primaryColor;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-left: 0.4em;
+    }
+  }
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $primaryColor;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-left: 2.4em;
+          transition: 0.3s color ease;
+
+          &:hover {
+            color: darken($primaryColor, 10%);
+          }
+        }
+        .sign-up-button {
+          border: 1px solid transparent;
+          transition: 0.3s ease;
+          @include tombol();
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: -1em;
+  }
+}
+
+// Custom Home section
+.custom-section {
+  margin-top: 10em;
+  h2 {
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: $primaryColor;
+    line-height: 1;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: $secondary;
+    line-height: 1;
+  }
+  p {
+    margin-top: 2em;
+    color: $textColor;
+    font-size: 1.075rem;
+  }
+
+  a {
+    margin-top: 2em;
+    border: 1px solid transparent;
+    @include tombol;
+    transition: 0.3s ease;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 5em;
+    text-align: center;
+    h2,
+    h3,
+    p {
+      text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+    }
+    h3 {
+      color: lighten($textColor, 20%);
+    }
+  }
+}
+
+// About section
+.contact-section {
+  margin-top: 10em;
+  h2 {
+    @include judul();
+    span {
+      color: $primaryColor;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 16em;
+  }
+}
